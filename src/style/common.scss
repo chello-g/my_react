@@ -1,0 +1,23 @@
+@import './default.scss';
+ 
+.container{
+  .nav-left{
+    padding:10px;
+      background-color:#001529;
+      color: #ffffff;
+      height: calc(100vh);
+      .nav-title {
+        color: #fff;
+        font-size: $fontA;
+      }
+  }
+  .main{
+      height: calc(100vh);
+      background-color: $colorL;
+      overflow: auto;
+  }
+  .content{
+      position: relative;
+      padding: 20px;
+  }
+}
