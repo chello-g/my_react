@@ -3,13 +3,14 @@
 .container{
   .nav-left{
     padding:10px;
-      background-color:#001529;
-      color: #ffffff;
-      height: calc(100vh);
-      .nav-title {
-        color: #fff;
-        font-size: $fontA;
-      }
+    background-color:#001529;
+    color: #ffffff;
+    height: calc(100vh);
+    .nav-title {
+      color: #fff;
+      font-size: $fontA;
+      text-align: center;
+    }
   }
   .main{
       height: calc(100vh);

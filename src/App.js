@@ -1,7 +1,8 @@
 import { Row, Col } from 'antd'
-import Nav from './components/nav'
+import Nav from './components/nav/index'
 import Header from './components/header'
 import Footer from './components/footer'
+import Home from './page/home'
 import './App.less';
 import './style/common.scss'
 
@@ -10,15 +11,15 @@ function App() {
   return (
     <div>
       <Row className='container'>
-        <Col>
-          <Nav/>
+        <Col className='nav-left' flex="160px">
+          <Nav />
         </Col>
-        <Col>
-          <Header/>
-            <Row>
-              我是内容区
-            </Row>
-          <Footer/>
+        <Col className='main' flex="auto">
+          <Header />
+          <Row className='content'>
+            <Home />
+          </Row>
+          <Footer />
         </Col>
       </Row>
     </div>
