@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2022-04-10 14:35:39
+ * @LastEditTime: 2022-04-10 21:52:06
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \my_react\src\router\index.js
+ */
 import Home from '../page/home'
 import Rich from '../page/rich'
 import Order from '../page/order'
@@ -16,6 +24,7 @@ import High from '../page/tables/high'
 const routes = [
   {
     path: '/',
+    exact: true,
     component: Home
   },
   {
@@ -45,9 +54,9 @@ const routes = [
   {
     path: '/ui',
     component: UI,
-    children: [
+    routes: [
       {
-        path: '/ui/button',
+        path: '/ui/buttons',
         component: Button
       },
       {
@@ -59,7 +68,7 @@ const routes = [
         component: Carousel
       },
       {
-        path: '/ui/message',
+        path: '/ui/messages',
         component: Messages
       }
     ]
@@ -67,7 +76,7 @@ const routes = [
   {
     path: '/table',
     component: Table,
-    children: [
+    routes: [
       {
         path: '/table/basic',
         component: Basic
