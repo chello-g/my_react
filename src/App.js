@@ -2,9 +2,10 @@ import { Row, Col } from 'antd'
 import Nav from './components/nav/index'
 import Header from './components/header'
 import Footer from './components/footer'
-import Home from './page/home'
 import './App.less';
 import './style/common.scss'
+import { renderRoutes } from 'react-router-config'
+import routes from './router'
 
 // 函数式组件
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Col className='main' flex="auto">
           <Header />
           <Row className='content'>
-            <Home />
+            {renderRoutes(routes)}
           </Row>
           <Footer />
         </Col>

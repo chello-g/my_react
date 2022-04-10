@@ -3,162 +3,162 @@ const menuConfig = [
   {
     id: '1',
     title: '首页',
-    key: '/home',
+    path: '/home',
     icon: <HomeOutlined />
   },
   {
     id: '2',
     title: 'UI',
-    key: '/ui',
+    path: '/ui',
     icon: <UnderlineOutlined />,
     children: [
       {
         id: '21',
         title: '按钮',
-        key: '/ui/buttons',
+        path: '/ui/buttons',
       },
       {
         id: '22',
         title: '弹框',
-        key: '/ui/modals',
+        path: '/ui/modals',
       },
       {
         id: '23',
         title: 'Loading',
-        key: '/ui/loadings',
+        path: '/ui/loadings',
       },
       {
         id: '24',
         title: '通知提醒',
-        key: '/ui/notification',
+        path: '/ui/notification',
       },
       {
         id: '25',
         title: '全局Message',
-        key: '/ui/messages',
+        path: '/ui/messages',
       },
       {
         id: '26',
         title: 'Tab页签',
-        key: '/ui/tabs',
+        path: '/ui/tabs',
       },
       {
         id: '27',
         title: '图片画廊',
-        key: '/ui/gallery',
+        path: '/ui/gallery',
       },
       {
         id: '28',
         title: '轮播图',
-        key: '/ui/carousel',
+        path: '/ui/carousel',
       },
     ],
   },
   {
     id: '3',
     title: '表单',
-    key: '/form',
+    path: '/form',
     icon: <FolderOutlined />,
     children: [
       {
         id: '31',
         title: '登录',
-        key: '/form/login',
+        path: '/form/login',
       },
       {
         id: '32',
         title: '注册',
-        key: '/form/reg',
+        path: '/form/reg',
       },
     ],
   },
   {
     id: '4',
     title: '表格',
-    key: '/table',
+    path: '/table',
     icon: <TableOutlined />,
     children: [
       {
         id: '41',
         title: '基础表格',
-        key: '/table/basic',
+        path: '/table/basic',
       },
       {
         id: '42',
         title: '高级表格',
-        key: '/table/high',
+        path: '/table/high',
       },
     ],
   },
   {
     id: '5',
     title: '富文本',
-    key: '/rich',
+    path: '/rich',
     icon: <FileDoneOutlined />,
   },
   {
     id: '6',
     title: '城市管理',
-    key: '/city',
+    path: '/city',
     icon: <ShopOutlined />
   },
   {
     id: '7',
     title: '订单管理',
-    key: '/order',
+    path: '/order',
     icon: <FileTextOutlined />,
     btnList: [
       {
         id: '71',
         title: '订单详情',
-        key: 'detail',
+        path: 'detail',
       },
       {
         id: '72',
         title: '结束订单',
-        key: 'finish',
+        path: 'finish',
       },
     ],
   },
   {
     id: '8',
     title: '员工管理',
-    key: '/user',
+    path: '/user',
     icon: <UserOutlined />
   },
   {
     id: '9',
     title: '车辆地图',
-    key: '/bikeMap',
+    path: '/bikeMap',
     icon: <CarOutlined />
   },
   {
     id: 'A',
     title: '图标',
-    key: '/charts',
+    path: '/charts',
     icon: <PieChartOutlined />,
     children: [
       {
         id: 'A1',
         title: '柱形图',
-        key: '/charts/bar',
+        path: '/charts/bar',
       },
       {
         id: 'A2',
         title: '饼图',
-        key: '/charts/pie',
+        path: '/charts/pie',
       },
       {
         id: 'A3',
         title: '折线图',
-        key: '/charts/line',
+        path: '/charts/line',
       },
     ],
   },
   {
     id: 'B',
     title: '权限设置',
-    key: '/permission',
+    path: '/permission',
     icon: <ExceptionOutlined />
   },
 ];
